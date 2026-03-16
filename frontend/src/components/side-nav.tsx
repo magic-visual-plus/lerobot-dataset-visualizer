@@ -84,7 +84,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                   </button>
                 ) : (
                   <Link
-                    to={`./episode_${episode}`}
+                    to={`/${datasetInfo.repoId}/episode_${episode}`}
                     className={`underline ${episode === episodeId ? "-ml-1 font-bold" : ""}`}
                   >
                     Episode {episode}
